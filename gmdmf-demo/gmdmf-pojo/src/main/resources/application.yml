@@ -1,0 +1,48 @@
+
+logging:
+  level:
+    root: off
+
+mybatis-plus:
+  type-aliases-package: net.zjitc.domain
+  mapper-locations: "classpath:/mapper/**/*.xml"
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler
+  global-config:
+    banner: off # 图标打印
+    db-config:
+      id-type: auto
+      update-strategy: not_null # 更新策略：只更新非空字段 [默认]
+
+# springdoc-openapi项目访问访问地址: http://127.0.0.1:8080/doc.html
+springdoc:
+  swagger-ui:
+    # Swagger 页面访问路径
+    path: /swagger-ui.html
+    # Tag 的排序规则，alpha(字母顺序) | as-is(代码顺序)
+    tags-sorter: alpha # [默认]
+    operations-sorter: alpha
+
+  api-docs:
+    #是否开启文档功能
+    enabled: true
+    # path: 配置 api-docs 的访问路径,默认为 /v3/api-docs [后端的请求地址]
+    path: /v3/api-docs
+
+  # group-configs: 配置分组信息
+  group-configs:
+    # group: 分组名称
+    - group: 'default'
+      # paths-to-match: 配置要匹配的路径,默认为/**
+      paths-to-match: '/**'
+      #  配置 Controller 的包扫描
+      packages-to-scan: net.zjitc.controller, net.zjitc.domain
+
+knife4j:
+  enable: true  # 开启 EnableKnife4j
+  setting:
+    language: zh_cn # 语言
+  # 设置生产环境屏蔽
+  production: false

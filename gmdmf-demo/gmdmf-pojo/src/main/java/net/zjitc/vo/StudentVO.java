@@ -1,0 +1,52 @@
+package net.zjitc.vo;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
+
+import java.time.LocalDateTime;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Accessors(chain = true)
+public class StudentVO {
+
+    @JsonSerialize(using = ToStringSerializer.class)
+    private Long id;
+
+    private String name;
+
+    private String sex;
+
+    @JsonFormat(pattern = "yyyy/MM/dd")
+    private LocalDateTime birth;
+
+    private String address;
+
+    private String phone;
+
+    private String email;
+
+    private String school;
+
+    private String department;
+
+    private String major;
+
+    private String teamName;
+
+    private String number;
+
+    private String username;
+
+    private String picture;
+
+    private String introduce;
+
+    private String rule;
+}

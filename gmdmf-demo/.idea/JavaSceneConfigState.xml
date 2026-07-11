@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SmartInputSourceJavaSceneConfigState">
+    <option name="customChineseScenes" value="{&quot;capsLockState&quot;:false,&quot;code&quot;:&quot;content;file;success(data,message);ApiOperation();ApiParam();Api(,tags);NotEmpty(message);Schema(name,description);Parameter(description);Tag(name);Email(message);Min(message);Pattern(message);URL(message);Operation(description,summary);setCourseName(courseName);send(subject);OpinionState(desc);setMessage(message);RequestParam(defaultValue);NotBlank(message);setTag(tag);setRule(rule);findByName(name);NonNull();NotNull(message);RuntimeException(message);setState(state);BusinessException(message);error(message);callWithMessage(input,userInput);Message(content);content(content)&quot;,&quot;enable&quot;:true,&quot;languageType&quot;:&quot;CHINESE&quot;,&quot;name&quot;:&quot;自定义中文切换&quot;,&quot;tip&quot;:&quot;&quot;}" />
+  </component>
+</project>

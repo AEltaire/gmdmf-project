@@ -1,0 +1,20 @@
+package net.zjitc.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Accessors(chain = true)
+public class PaperApprovalDTO {
+
+    private Long id;
+    private Long paperId;
+    private Long studentId;
+    private String type;
+    private Float score;
+    private Float point;
+}
